@@ -12,8 +12,9 @@ function check(testOutput, stdOutput) {
   for (let i = 0; i < len; i++) {
     if (expectedLines[i].trim() !== resultLines[i].trim()) {
       console.log(
-        " Failed here: ",
+        " Failed here: Expected Output : ",
         expectedLines[i].trim(),
+        " Current Output : ",
         resultLines[i].trim()
       );
       return false;
